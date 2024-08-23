@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Portfolio</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- daisyUI & tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/fa43c8f717.js" crossorigin="anonymous"></script>
+    <!-- TailwindCss CDN  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "house-primary": '#ABEF5F',
+                "house-primary-tow": 'rgba(171, 239, 95, 0.5)',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+<body class="font-manrope">
+    <!-- header-section -->
+    <header class="bg-gradient-to-b from-gray-100 to-gray-0">
+        <div class="navbar container mx-auto">
+            <div class="navbar-start">
+              <div class="dropdown">
+                
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a class="font-bold">Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="mr-5 -rotate-45 bg-house-primary px-3 py-2 rounded-full text-lg">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div>
+                <a class="text-3xl font-bold">Rinterio</a>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogss</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="hidden md:inline bg-white rounded-full px-3 py-2 mr-5">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div> 
+              <div class="hidden md:inline mr-5 bg-white rounded-full px-3 py-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="hidden md:inline bg-house-primary px-4 rounded-3xl hover:text-gray-100">
+                <button class="bg-house-primary lg:btn border-none font-bold py-3 text-xl">Book Consult</button>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black px-2 py-2 rounded-full"></i>
+              </div>
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- banner section -->
+        <div class="container mx-auto mt-14">           
+            <div class="mx-8 md:mx-0">
+                <!-- image -->
+                <div class="flex flex-col justify-center items-center lg:mt-9">
+                    <img class="" src="assets/banner.png" alt="">
+                </div>
+                <!-- text -->
+                 <div class="space-y-5 text-center mx-auto">
+                    <h1 class="text-4xl lg:text-7xl lg:pb-5 font-bold mt-5">A barn house of this design has a striking appearance</h1>
+                    <p class="md:w-4/5 mx-auto">A barn house with a striking appearance typically features a blend of traditional and modern elements. It might showcase a classic gambrel or gabled roof with clean, angular lines, large windows for ample natural light, and a mix of natural materials like weathered wood and steel. The exterior often combines rustic charm with contemporary aesthetics, creating a visually engaging and functional space.</p>
+                    <button class="bg-house-primary-tow px-28 lg:px-5 py-2 rounded-3xl">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-house-primary px-2 py-2 rounded-full"></i></button>
+                 </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-section  -->
+    <main></main>
+    <!-- footer-section -->
+    <footer></footer>
+</body>
+</html>
